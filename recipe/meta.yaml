@@ -21,11 +21,20 @@ requirements:
     - poetry
     - python >=3.6,<4.0
   run:
+    - aiohttp >=3.7.4
     - aiosqlite >=0.16.0,<0.17.0
+    - astroid >=2.5.7
+    - fastapi >=0.65.1
     - iso8601 >=0.1.13,<0.2.0
+    - pydantic >=1.8.2
+    - pylint >=2.7.2
     - pypika-tortoise >=0.1.1,<0.2.0
     - python >=3.6,<4.0
     - pytz
+    - quart >=0.15.1
+    - sanic >=21.3.4
+    - starlette >=0.14.2
+    - typing_extensions >=3.7.2
 
 test:
   imports:
