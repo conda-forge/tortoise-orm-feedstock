@@ -1,5 +1,5 @@
 {% set name = "tortoise-orm" %}
-{% set version = "0.17.4" %}
+{% set version = "0.17.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tortoise-orm-{{ version }}.tar.gz
-  sha256: 8314a9ae63d3f009bac5da3e7d1f7e3f2de8f9bad43ce1efcd3e059209cd3f9d
+  sha256: 65a930e6e6050866dc18a7d251a77a6dd2616e814da3ede8bda990147fa6b7d5
 
 build:
   number: 0
@@ -24,6 +24,7 @@ requirements:
     - aiohttp >=3.7.4
     - aiosqlite >=0.16.0,<0.17.0
     - astroid >=2.5.7
+    - asyncpg >=0.23.0
     - fastapi >=0.65.1
     - iso8601 >=0.1.13,<0.2.0
     - pydantic >=1.8.2
