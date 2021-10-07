@@ -1,5 +1,5 @@
 {% set name = "tortoise-orm" %}
-{% set version = "0.17.7" %}
+{% set version = "0.17.8" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tortoise-orm-{{ version }}.tar.gz
-  sha256: 74d5c6341fc0e2d4ef7a321f460107715da2679a2b3e2a48e32e276ed7bd3fc0
+  sha256: 1f5020e9964d32a4d6ed685d466b5d7285de328a63ee92ee988c1e4baf8fefbf
 
 build:
   number: 0
