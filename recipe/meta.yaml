@@ -1,5 +1,5 @@
 {% set name = "tortoise-orm" %}
-{% set version = "0.19.3" %}
+{% set version = "0.20.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: ca574bca5191f55608f9013314b1f5d1c6ffd4165a1fcc2f60f6c902f529b3b6
+  sha256: 283af584d685dcc58d6cc1da35b9115bb1e41c89075eae2a19c493b39b9b41f7
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,12 +19,12 @@ requirements:
   host:
     - pip
     - poetry-core >=1.0.0
-    - python >=3.7,<4.0
+    - python >=3.8.0,<4.0.0
   run:
     - aiosqlite >=0.16.0,<0.18.0
     - iso8601 >=1.0.2,<2.0.0
     - pypika-tortoise >=0.1.6,<0.2.0
-    - python >=3.7,<4.0
+    - python >=3.8.0,<4.0.0
     - pytz
 
 test:
