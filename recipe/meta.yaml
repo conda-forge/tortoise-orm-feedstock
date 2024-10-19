@@ -26,6 +26,8 @@ requirements:
     - iso8601 >=2.1.0,<3.0.0
     - aiosqlite >=0.16.0,<0.21.0
     - pytz
+    # Not listed as required but actually is
+    - pydantic >=2.0,<3.0,!=2.7.0
 
 test:
   imports:
