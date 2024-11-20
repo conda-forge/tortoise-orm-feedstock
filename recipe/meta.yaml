@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: feaae36507d36db8188ea05e07d7a6f5d2a367181e4349416fc09b40655199a4
 
 build:
@@ -22,12 +22,11 @@ requirements:
     - python >=3.8,<4.0
   run:
     - python >=3.8,<4.0
-    - pypika-tortoise >=0.2.1,<0.3.0
+    - pypika-tortoise >=0.2.2,<0.3.0
     - iso8601 >=2.1.0,<3.0.0
     - aiosqlite >=0.16.0,<0.21.0
     - pytz
-    # Not listed as required but actually is
-    - pydantic >=2.0,<3.0,!=2.7.0
+    - pydantic !=2.7.0,<3.0,>=2.0
 
 test:
   imports:
