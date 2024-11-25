@@ -1,5 +1,5 @@
 {% set name = "tortoise-orm" %}
-{% set version = "0.22.0" %}
+{% set version = "0.22.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: feaae36507d36db8188ea05e07d7a6f5d2a367181e4349416fc09b40655199a4
+  sha256: 50cce7ab3eee5321553810ee31f411abde7a1806312655a377801c91e1b2cb77
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
     - python {{ python_min }}
   run:
     - python >={{ python_min }}
-    - pypika-tortoise >=0.2.2,<0.3.0
+    - pypika-tortoise >=0.3.0,<0.4.0
     - iso8601 >=2.1.0,<3.0.0
     - aiosqlite >=0.16.0,<0.21.0
     - pytz
