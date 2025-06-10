@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: tortoise-orm
-  version: 0.25.0
+  version: "0.25.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 7d0aaf31c33a25a9efad8f94b44ee50febae15889f4da119cf184ffe98002673
+  sha256: 4d5bfd13d5750935ffe636a6b25597c5c8f51c47e5b72d7509d712eda1a239fe
 
 build:
   number: 0
@@ -24,9 +24,9 @@ requirements:
     - python ${{ python_min }}.*
   run:
     - python >=${{ python_min }}
-    - pypika-tortoise >=0.5.0,<0.6.0
+    - pypika-tortoise >=0.6.1,<1.0.0
     - iso8601 >=2.1.0,<3.0.0
-    - aiosqlite >=0.16.0,<0.21.0
+    - aiosqlite >=0.16.0,<1.0.0
     - pytz
 
 tests:
