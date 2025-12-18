@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: tortoise-orm
-  version: "0.25.1"
+  version: "0.25.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 4d5bfd13d5750935ffe636a6b25597c5c8f51c47e5b72d7509d712eda1a239fe
+  sha256: 7e09547846eb27664b402a3b095e1d15ab6406ba56641fad260cf2877ca8d4c5
 
 build:
   number: 0
@@ -20,14 +20,16 @@ build:
 requirements:
   host:
     - pip
-    - poetry-core >=1.0.0
+    - pdm-backend
     - python ${{ python_min }}.*
   run:
     - python >=${{ python_min }}
-    - pypika-tortoise >=0.6.1,<1.0.0
+    - pypika-tortoise >=0.6.3,<1.0.0
     - iso8601 >=2.1.0,<3.0.0
     - aiosqlite >=0.16.0,<1.0.0
     - pytz
+    # Not listed but required?
+    - anyio
 
 tests:
   - python:
@@ -49,7 +51,7 @@ about:
 
 
   homepage: https://github.com/tortoise/tortoise-orm
-  documentation: http://tortoise-orm.readthedocs.io/en/latest/
+  documentation: https://tortoise.github.io/
 
 extra:
   recipe-maintainers:
