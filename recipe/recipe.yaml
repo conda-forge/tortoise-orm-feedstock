@@ -20,11 +20,11 @@ build:
 requirements:
   host:
     - pip
-    - poetry-core >=1.0.0
+    - pdm-backend
     - python ${{ python_min }}.*
   run:
     - python >=${{ python_min }}
-    - pypika-tortoise >=0.6.1,<1.0.0
+    - pypika-tortoise >=0.6.3,<1.0.0
     - iso8601 >=2.1.0,<3.0.0
     - aiosqlite >=0.16.0,<1.0.0
     - pytz
@@ -49,7 +49,7 @@ about:
 
 
   homepage: https://github.com/tortoise/tortoise-orm
-  documentation: http://tortoise-orm.readthedocs.io/en/latest/
+  documentation: https://tortoise.github.io/
 
 extra:
   recipe-maintainers:
