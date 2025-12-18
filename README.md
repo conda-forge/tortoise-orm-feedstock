@@ -9,7 +9,7 @@ Package license: Apache-2.0
 
 Summary: Easy async ORM for python, built with relations in mind
 
-Documentation: http://tortoise-orm.readthedocs.io/en/latest/
+Documentation: https://tortoise.github.io/
 
 Tortoise ORM is an easy-to-use asyncio ORM (Object Relational Mapper)
 inspired by Django. Tortoise ORM was built with relations in mind and
