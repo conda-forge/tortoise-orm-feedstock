@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: tortoise-orm
-  version: "1.1.1"
+  version: "1.1.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 95770d1b97fe4fd12a8b673c2eb2beb5c97cfde11ada3c97107d0845cbdb7c69
+  sha256: c0caaddfda1620213d130e6fa50db26136fba899cd40a209a8061ddfee63696f
 
 build:
   number: 0
